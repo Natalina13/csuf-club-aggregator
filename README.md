@@ -1,4 +1,4 @@
-# Project
+# CSUF Club Aggregator
 
 one webportal which comprises all the clubs and notifies student about their events and has google forms to submit their response. When we have one portal for all the clubs you do not have to navigate through all the Instagram or facebook pages to know about your clubs events
 
