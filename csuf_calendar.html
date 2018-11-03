@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Calendar</title>
+<link rel="stylesheet" href="csuf_webstyle.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- plugin file source -->
+<link href="dist/equinox.css" rel="stylesheet" type="text/css">
+<script src="dist/equinox.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- heading -->
+<img style="padding:8px 25px;width:110px;height:110px;float:left" src="csuf_csuf.png">
+<div id="top">
+<br>
+<h1 id="title">  CSUF Club Aggregator</h1>
+</div>
+
+<!-- small divider between left column and right column -->
+<div id="left_column">
+<ul>
+<li><a href="csuf_home.html">Home</a></li>
+  <li><a href="csuf_clubs.html">Club Listing</a></li>
+  <li><a href="csuf_calendar.html">Calendar</a></li>
+  <li><a href="csuf_login.html">Login</a></li>
+  <li><a href="csuf_contact.html">Contact</a></li>
+</ul>
+</div>
+
+<!-- right section of the page -->
+<div class="rightcolumn">
+
+<!-- title for content -->
+<div id="header">
+<h1>Calendar</h1>
+<hr>
+
+<!-- content -->
+<div id="content">
+<input type="checkbox" id="ACM_check" onClick="myFunction()"> ACM<br>
+<input type="checkbox" id="ACM-W_check" onClick="myFunction2()"> ACM-W<br>
+
+
+<iframe id = "ACM_cal" style="display:none" src="csuf_calendar_plugin.html"></iframe>
+<iframe id = "ACM-W_cal" style="display:none" src="csuf_calendar_plugin_ACM-W.html"></iframe>
+
+<script>
+function myFunction() {
+var checkBox_ACM = document.getElementById("ACM_check");
+var ACM = document.getElementById("ACM_cal");
+if (checkBox_ACM.checked == true) {
+ACM.style.display = "block";
+} else {
+ACM.style.display="none";
+}
+}
+
+</script>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+</body>
+</html>

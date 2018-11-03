@@ -1,49 +1,31 @@
-# CSUF Club Aggregator
+# Equinox
 
-one webportal which comprises all the clubs and notifies student about their events and has google forms to submit their response. When we have one portal for all the clubs you do not have to navigate through all the Instagram or facebook pages to know about your clubs events
+A simple, fully responsive jQuery calendar plugin.
 
-## The Project Team
+## Getting Started
 
-### Team Lead
-Natalina Rodrigues linarodrigues13@csu.fullerton.edu
-#### Team Members
-  1. Member one
-  2. Member two
-  3. Member three
+### Link Files
 
-## Project Technologies
+Begin by copying the contents of the 'dist' folder into your site's library folder, ideally into their own 'equinox' directory.
 
-This project will use:
-  * Technology 1 + resource url
-  * Technology 2 + resource url
+Include the Equinox CSS file in the head of your page:
 
-## How to start helping
-*Please make sure you have git installed on your computer before you begin to help. To install git, please visit [Git](https://git-scm.com/downloads)*
+```
+<link rel="stylesheet" type="text/css" href="equinox/equinox.css">
+```
 
-To begin open your terminal (if using Linux/Mac) or git bash (if Windows), and navigate to the folder that you would like to save this project
+Also include the Equinox javascript file as well as the required [jQuery](http://jquery.com/) and [Moment.js](http://momentjs.com/) libraries, preferrably towards the end of your site ahead of the closing `</body>` tag:
 
-*If you need help navigating the terminal please refer to this link: [Linux Command Tutorial](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners)*
+```
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.6.0/moment.min.js"></script>
+<script type="text/javascript" src="equinox/equinox.min.js"></script>
+```
 
-use `git clone https://github.com/CSUF-ACM/csuf-club-aggregator.git` to clone the repository into your folder
+### Initialize Equinox Object
 
-To work on the project without disrupting the work of others or having your work disturbed, use `git branch <branchname>` to create a new branch, then use `git checkout <branchname>` to start working on your new branch
+Once all the required CSS and javascript files have been linked, you may instantiate an Equinox object on any element:
 
-### Saving your progress
-
-To check the status of your repository, seeing what files have been modified or added, use `git status` to print a status message
-
-After you've made some changes or created new files, use `git add <file>` or `git add *` to add all of your new/modified files to the stage
-
-Once those files have been added, use `git commit -m "Commit message here"` to create the commit, then use `git push origin <branchname>` to push your commit to the remote repository
-
-### Merging your work
-
-If you would like to have the code on your branch merged with the master, please submit a pull request on the git hub page https://github.com/CSUF-ACM/csuf-club-aggregator/pulls
-
-If the pull request is accepted, your branch will be merged with the master branch
-
-### Additional help
-
-If you need some more help with git commands, please visit [Git Command Tutorial](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html)
-
-If you have any questions or need more help, please contact the Project Lead, Natalia Rodrigues linarodrigues13@csu.fullerton.edu
+```
+$('.event-calendar').equinox({});
+```
