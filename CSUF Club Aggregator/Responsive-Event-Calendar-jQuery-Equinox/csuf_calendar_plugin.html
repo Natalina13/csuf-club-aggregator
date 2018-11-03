@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>CSUF Calendar Plugin</title>
+<link href="dist/equinox.css" rel="stylesheet" type="text/css">
+
+<script src="dist/equinox.min.js"></script>
+
+
+</head>
+<body>
+<div class="event-calendar"></div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<script src="dist/equinox.min.js"></script>
+<script>
+
+$('.event-calendar').equinox({
+	events: [{
+		start: '2018-10-20 17:30',
+		end: '2018-10-22 17:30',
+		title: 'Event 1',
+		url: '#',
+		class: 'ACM',
+		color: '#abcdef',
+		data: {}
+		}, { 
+		start: '2018-10-20 17:30',
+		end: '2018-10-22 17:30',
+		title: 'Event 2',
+		url: '#',
+		class: 'ACM',
+		color: '#4324',
+		data: {}
+		},{
+		start: '2018-10-20 7:30',
+		end: '2018-10-22 11:30',
+		title: 'Event 3',
+		url: '#',
+		class: 'ACM',
+		color: '#2342',
+		data: {}
+		}],
+		
+	});
+</script>
+<script type="text/javascript">
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+  
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  
+  })();
+
+</script>
+
+</body>
+</html>
